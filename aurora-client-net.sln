@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aurora", "Aurora.csproj", "{984C20E1-1BF0-4C9A-B2F4-250B3E2ACBEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{984C20E1-1BF0-4C9A-B2F4-250B3E2ACBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984C20E1-1BF0-4C9A-B2F4-250B3E2ACBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984C20E1-1BF0-4C9A-B2F4-250B3E2ACBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984C20E1-1BF0-4C9A-B2F4-250B3E2ACBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FB4E12E-45AF-4992-A4C0-9B5DA5FC1F6B}
+	EndGlobalSection
+EndGlobal
