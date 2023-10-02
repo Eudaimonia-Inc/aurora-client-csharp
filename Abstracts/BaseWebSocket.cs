@@ -3,12 +3,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Aurora.Abstracts
 {
-    public class BaseWebSocketClient : IAsyncDisposable
+    public class BaseWebSocket : IAsyncDisposable
     {
         protected HubConnection? _connection;
         protected readonly string? _apiKey;
 
-        public BaseWebSocketClient(string apiKey) => _apiKey = apiKey;
+        public BaseWebSocket(string apiKey) => _apiKey = apiKey;
 
         protected async Task ConnectAsync(string url)
         {

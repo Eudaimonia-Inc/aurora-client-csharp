@@ -5,20 +5,20 @@ using eudaimonia.datasync.application.Models.Dtos;
 using Microsoft.AspNetCore.SignalR.Client;
 using System.Threading.Channels;
 
-namespace Aurora.Clients
+namespace Aurora.Clients.WebSocket
 {
-    public class AuroraDataWebSocketClient : BaseWebSocketClient
+    public class CryptoWebSocket : BaseWebSocket
     {
-        public AuroraDataWebSocketClient(string apiKey) : base(apiKey) { }
+        public CryptoWebSocket(string apiKey) : base(apiKey) { }
 
-        public async Task<ChannelReader<DataAggregateStream>> AggregatesStreamAsync(DataAggregatesStreamRequest request)
+        public async Task<ChannelReader<CryptoAggregateStream>> StreamAggregatesAsync(CryptoAggregatesStreamRequest request)
         {
             if (_connection == null || _connection.State != HubConnectionState.Connected)
             {
                 await ConnectAsync(Endpoints.GetDataAggregatesStreamUrl);
             }
 
-            return await _connection.StreamAsChannelAsync<DataAggregateStream>(Endpoints.AggregatesStreamMethodName, request.Identifier);
+            return await _connection.StreamAsChannelAsync<CryptoAggregateStream>(Endpoints.AggregatesStreamMethodName, request.Identifier);
         }
     }
 }

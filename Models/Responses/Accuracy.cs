@@ -1,6 +1,6 @@
 ﻿namespace Aurora.Models.Responses
 {
-    public class GetAccuracyResponse
+    public class Accuracy
     {
         public decimal Close_mae { get; set; }
         public decimal Close_rmse { get; set; }

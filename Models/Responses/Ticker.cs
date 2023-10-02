@@ -1,6 +1,6 @@
 ﻿namespace Aurora.Models.Responses
 {
-    public class GetIdentifiersResponse
+    public class Ticker
     {
         public string Identifier { get; set; }
     }

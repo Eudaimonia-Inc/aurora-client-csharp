@@ -1,5 +1,4 @@
-﻿using Aurora.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Aurora.Abstracts
 {
@@ -14,7 +13,7 @@ namespace Aurora.Abstracts
             _apiKey = apiKey;
         }
 
-        protected async Task<Response<T>?> GetAsync<T>(Uri uri)
+        protected async Task<T> GetAsync<T>(Uri uri)
         {
             var request = new HttpRequestMessage(HttpMethod.Get, uri.AbsoluteUri);
 
@@ -23,7 +22,7 @@ namespace Aurora.Abstracts
             var response = await _httpClient.SendAsync(request);
             var result = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<Response<T>>(result);
+            return JsonConvert.DeserializeObject<T>(result);
         }
     }
 }

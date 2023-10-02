@@ -1,6 +1,6 @@
 ﻿namespace Aurora.Models.Requests
 {
-    public class DataAggregatesStreamRequest
+    public class CryptoAggregatesStreamRequest
     {
         public string Identifier { get; set; }
     }

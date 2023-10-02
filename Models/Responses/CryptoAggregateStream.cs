@@ -1,6 +1,6 @@
 ﻿namespace eudaimonia.datasync.application.Models.Dtos
 {
-    public class DataAggregateStream
+    public class CryptoAggregateStream
     {
         private double? volumeWeighted;
         public string Identifier { get; set; }
