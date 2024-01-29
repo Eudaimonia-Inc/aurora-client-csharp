@@ -20,5 +20,13 @@
         public const string GetDataAggregatesStreamUrl = BaseUrl + WS + "/crypto";
         public const string GetForecastAggregatesStreamUrl = BaseUrl + WS + "/forecast";
         public const string AggregatesStreamMethodName = "Aggregates";
+
+        public const string GetMarketNewsUrl = BaseUrl + Api + "/MarketNews";
+        public const string GetMarketNewsTypesUrl = BaseUrl + Api + "/MarketNews/Types";
+        public const string GetMarketNewsEventsUrl = BaseUrl + Api + "/MarketNews/Events";
+
+        public const string GetMarketSentimentUrl = BaseUrl + Api + "/MarketSentiment/{0}";
+
+        public const string GetAggregatesPricesUrl = BaseUrl + Api + "/Aggregates/Prices";
     }
 }

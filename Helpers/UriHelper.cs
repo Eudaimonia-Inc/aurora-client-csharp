@@ -15,6 +15,11 @@ namespace Aurora.Helpers
 
                 foreach (var parameter in parameters)
                 {
+                    if (string.IsNullOrEmpty(parameter.Value))
+                    {
+                        continue;
+                    }
+
                     if (query.AllKeys.Contains(parameter.Key))
                     {
                         query[parameter.Key] = parameter.Value;
